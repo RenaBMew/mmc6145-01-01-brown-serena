@@ -1,0 +1,49 @@
+.header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  z-index: 100;
+}
+
+.name {
+  margin-right: auto;
+  color: white;
+  font-size: 1.5em;
+  padding: 20px;
+  font-weight: 800;
+  transition-duration: 0.7s;
+}
+
+.name:hover {
+  color: rgb(255, 0, 162);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.link {
+  font-size: 1.5em;
+  color: white;
+  padding: 20px;
+  font-weight: 800;
+  transition-duration: 0.7s;
+}
+
+.link:hover {
+  color: rgb(255, 0, 162);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 1em;
+  }
+
+  .link {
+    font-size: 1em;
+  }
+}

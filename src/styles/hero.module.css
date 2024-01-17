@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+.heroHome {
+  background-image: url("../assets/drew-beamer-3SIXZisims4-unsplash.jpg");
+  background-color: black;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.heroAbout {
+  background-image: url("../assets/susan-q-yin-iLl5aKIkGic-unsplash.jpg");
+  background-color: black;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.heroContact {
+  background-image: url("../assets/ussama-azam-26h317_UMYM-unsplash.jpg");
+  background-color: black;
+  height: 500px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.heroText {
+  color: white;
+  text-align: center;
+}
+
+.heroH1 {
+  font-family: "Rock Salt", cursive;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 200px;
+}
+
+.text {
+  color: white;
+}
+
+@media screen and (min-width: 1600px) {
+  .heroHome {
+    background-size: 70%;
+  }
+
+  .heroAbout {
+    background-size: 70%;
+  }
+
+  .heroContact {
+    background-size: 70%;
+  }
+}

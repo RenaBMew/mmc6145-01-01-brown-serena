@@ -1,0 +1,67 @@
+.projectBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.projectContainer {
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+  max-width: 70%;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.projectCaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  transition: all 600ms ease-in-out;
+}
+
+.projectCaption h2 {
+  color: rgb(255, 36, 175);
+  margin: 5px;
+  text-align: center;
+}
+
+.projectCaption p {
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+  text-align: center;
+  width: 80%;
+}
+
+.projectContainer:hover .projectCaption {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .projectCaption h2 {
+    font-size: 1em;
+    padding: 0px;
+  }
+
+  .projectCaption p {
+    font-size: 0.7em;
+    margin: 0em;
+  }
+}
